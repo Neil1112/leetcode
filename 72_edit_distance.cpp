@@ -7,6 +7,16 @@ using namespace std;
 // function that calculates the edit distance between two strings
 // using dynamic programming - tabulation
 // returns - edit distance between the two strings
+/* Tabulation method
+      |   | r | o | s |
+    ---------------------
+      | 0 | 1 | 2 | 3 |
+    h | 1 | 1 | 2 | 3 |
+    o | 2 | 2 | 1 | 2 |
+    r | 3 | 2 | 2 | 2 |
+    s | 4 | 3 | 3 | 2 |
+    e | 5 | 4 | 4 | 3 |
+*/
  int minDistance(string word1, string word2) {
     int word1_size = word1.size();
     int word2_size = word2.size();
