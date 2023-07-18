@@ -3,7 +3,7 @@
 #include <unordered_set>
 using namespace std;
 
-// funciton that calculates the longest unique substring
+// function that calculates the longest unique substring
 // using dynamic programming - tabulation
 // returns - length of the longest unique substring
 int longestCommonSubsequence(string text1, string text2) {
